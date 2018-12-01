@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(221, 254, 255);
+}
+header {
+    font-family: 'Chakra Petch', sans-serif;
+    background: #03a9f4;
+    text-align: center;
+}
+.logo {
+    color:#fff;
+    font-size: 40px;
+}
+header input {
+    margin: 20px 0px;
+}
