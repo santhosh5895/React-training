@@ -4,8 +4,8 @@ class Header extends Component {
     constructor(props){
         super(props);
         this.state = {
-            Title : "This is the title:",
-            Value : "default"
+            Title : "You are trying to search for :",
+            Value : "Nothing"
         }
     }
     printType(event){
@@ -14,7 +14,7 @@ class Header extends Component {
     render(){
         return(
             <header>
-                <h3 className="logo" onClick={()=>console.log("Logo clicked!")}>Header</h3>
+                <div className="logo" onClick={()=>console.log("Logo clicked!")}>News</div>
                 <input onChange={this.printType.bind(this)}/>
                 <div>{this.state.Title}  {this.state.Value}</div>
             </header>
