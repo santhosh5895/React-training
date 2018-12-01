@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(221, 254, 255);
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    font-family: 'Chakra Petch', sans-serif;
+    background: #03a9f4;
+    text-align: center;
+    padding: 20px 0px;
+}
+.logo {
+    color:#fff;
+    font-size: 40px;
+}
+header input {
+    margin: 20px 0px;
+}
+.newsItem {
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+}
