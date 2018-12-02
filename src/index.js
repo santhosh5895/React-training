@@ -8,14 +8,25 @@ class App extends Component{
     constructor(probs){
         super(probs);
         this.state={
-            news:JSON
+            news:JSON,
+            filtered:JSON
         }
     }
+
+    filterNews(keyword){
+        console.log(keyword);
+        let filtered = this.state.news.filter((item)=>{
+            return item.title.indexOf(keyword) > -1;
+        });
+        
+        this.setState({filtered});
+    }
+
     render(){
         return(
             <div>
-                <Header/>
-                <NewsList news={this.state.news}/>
+                <Header filterNews={(keyword)=>this.filterNews(keyword)}/>
+                <NewsList news={this.state.filtered}/>
             </div>
         )
     }

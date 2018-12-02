@@ -10,6 +10,7 @@ class Header extends Component {
     }
     printType(event){
         this.setState({Value: event.target.value});
+        this.props.filterNews(this.state.Value);
     }
     render(){
         return(
